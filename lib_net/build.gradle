@@ -5,7 +5,7 @@ publish {
     userOrg = 'wanglib'
     groupId = 'com.wang.lib.net'
     artifactId = 'lib_net'
-    publishVersion = '0.0.1'
+    publishVersion = '0.0.2'
     desc = 'Oh hi, this is a nice description for a project, right?'
     website = ''
 }

@@ -1,2 +1,2 @@
 gradlew clean build bintrayUpload -PbintrayUser=BINTRAY_USERNAME -PbintrayKey=BINTRAY_KEY -PdryRun=false
-gradlew clean build bintrayUpload -PbintrayUser=wangsongbin -PbintrayKey=f9e6478dad23b2b5ea9aeae2ef537136c353167f -PdryRun=false
+gradlew clean build bintrayUpload -PbintrayUser=wangsongbin -PbintrayKey=apikey -PdryRun=false
