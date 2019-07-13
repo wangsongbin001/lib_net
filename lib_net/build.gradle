@@ -1,14 +1,26 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'maven'
 
-publish {
-    userOrg = 'wanglib'
-    groupId = 'com.wang.lib.net'
-    artifactId = 'lib_net'
-    publishVersion = '0.0.2'
-    desc = 'Oh hi, this is a nice description for a project, right?'
-    website = ''
+uploadArchives{
+    repositories.mavenDeployer{
+        // 配置本地仓库路径，项目根目录下的repository目录中
+        repository(url: uri('../repository'))
+        pom.groupId = "com.wang.lib.net"// 唯一标识（通常为模块包名，也可以任意）
+        pom.artifactId = "lib_net" // 项目名称（通常为类库模块名称，也可以任意）
+        pom.version = "0.0.2" // 版本号
+    }
 }
+
+//apply plugin: 'com.novoda.bintray-release'
+
+//publish {
+//    userOrg = 'wanglib'
+//    groupId = 'com.wang.lib.net'
+//    artifactId = 'lib_net'
+//    publishVersion = '0.0.2'
+//    desc = 'Oh hi, this is a nice description for a project, right?'
+//    website = ''
+//}
 
 android {
     compileSdkVersion 28

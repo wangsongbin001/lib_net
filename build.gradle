@@ -20,6 +20,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+        //本地仓库地址
+        maven{
+            url 'file:\\C:\\Users\\wangs\\AndroidStudioProjects\\github\\lib_net\\repository'
+        }
     }
     tasks.withType(Javadoc) {
         options.addStringOption('Xdoclint:none', '-quiet')
