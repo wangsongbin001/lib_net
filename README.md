@@ -25,15 +25,6 @@
                 });
 ```
 
-
-# 统一下载器封装
-1. 实时回调
-2. 实时状态查询
-3. 断点续传
-4. 多线程下载
-5. 任务队列管理
-6. 定时（例如：三天前）清理已安装包，缓存文件
-
 # lib_net
 gradlew clean build bintrayUpload -PbintrayUser=BINTRAY_USERNAME -PbintrayKey=BINTRAY_KEY -PdryRun=false
 gradlew clean build bintrayUpload -PbintrayUser=wangsongbin -PbintrayKey=apikey -PdryRun=false;
