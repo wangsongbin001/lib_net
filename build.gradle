@@ -22,7 +22,9 @@ allprojects {
         jcenter()
         //本地仓库地址
         maven{
-            url 'file:\\C:\\Users\\wangs\\AndroidStudioProjects\\github\\lib_net\\repository'
+//            url 'file:\\C:\\Users\\wangs\\AndroidStudioProjects\\github\\lib_net\\repository'
+            url '/Users/songbinwang/AndroidStudioProjects/github/lib_net/repository'
+
         }
     }
     tasks.withType(Javadoc) {
